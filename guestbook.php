@@ -47,8 +47,7 @@ try {
         if (userIsAdmin($conn)) {
             echo 'Color:';
             echo '<input type="text" name="color">';
-        }
-        else {
+        } else {
             echo '<input type="hidden" value="red" name="color">';
         }
         ?>
@@ -66,8 +65,7 @@ try {
         $admin = isset($_POST['admin']) ? 1 : 0;
         if (userIsAdmin($conn)) {
             $color = $_POST['color'];
-        }
-        else {
+        } else {
             $color = 'red';
         }
         $color = $_POST['color'];
